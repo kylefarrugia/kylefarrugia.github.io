@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	font-family: 'Montserrat';
+}
+
+#body_mp {
+	width: 100%;
+	height: 100%;
+	background-image: url("Background/bg_m.png");
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+	overflow-x: hidden;
+	color: #DADADA;
+	background-color: #134367;
+}
+
+#body_sp {
+	width: 100%;
+	height: 100%;
+	background: url("Background/bg_2.png");
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+	overflow-x: hidden;
+	color: #DADADA;
+	background-color: #134367;
+}
+
+a.button {
+	color: aliceblue;
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#container {
+	width: 400px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	text-align: center;
+}
+
+#container2 {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	margin-top: 100px;
+	text-align: center;
+	align-content: center;	
+}
+
+#container3 {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	margin-top: 100px;
+	text-align: center;
+	align-content: center;
+	padding-bottom: 1000px;
+	padding-top: 150px;
+	
+	animation-delay: 2s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.spcontainer {
+	margin-left: 8%;
+	margin-top: 100px;
+	text-align: left;
+}
+
+.imgtbl {
+	border: solid rgba(0,0,0,1.00);
+	height: 303px;
+}
+
+.sectionlinks {
+	font-size: 23px;
+	}
+
+a.sectionlinks:link, a.sectionlinks:visited {
+	background-color: #2D2D2D;
+	padding: 12px 40px;	
+	text-decoration: none;
+	color: #DADADA;
+}
+
+a.sectionlinks:hover {
+	background-color: #283843;
+	padding: 12px 40px;
+	color: #DADADA;
+}
+
+.tablelinks {
+	font-size: 23px;
+	text-align: center;
+	}
+
+a.tablelinks:link, a.tablelinks:visited {
+	background-color: #2D2D2D;
+	padding: 12px 40px;	
+	text-align: center;
+	text-decoration: none;
+	color: #DADADA;
+}
+
+a.tablelinks:hover {
+	background-color: #283843;
+	padding: 12px 40px;
+	color: #DADADA;
+}
+
+
+#title {
+	text-align: center;
+	float: top;
+	margin-bottom: 0px;
+
+	/*animation*/
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+#subtitle {
+	text-align: center;
+	float: top;
+	color: #B6B6B6;
+	margin-top: 5px;
+	
+	/*animation*/
+	animation-delay: 2s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.an0 {
+	animation-delay: 0s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.an05 {
+	/*animation*/
+	animation-delay: 2s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.an1 {
+	/*animation*/
+	animation-delay: 4s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.an2 {
+	/*animation*/
+	animation-delay: 5.5s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.an3 {
+	/*animation*/
+	animation-delay: 7s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+img.opacimg:hover {-webkit-filter: opacity(80%); }
+
+h1 { 
+	font-size: 60px;
+	}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+.images {
+	width: 500px;
+	border: solid rgba(0,0,0,1.00);
+}
+
+.photography {
+	height: 500px;
+	border: solid rgba(0,0,0,1.00);
+}
+
+.models {
+	height: 200px;
+	border: solid rgba(0,0,0,1.00);
+}
+
+.tablespace {
+	margin-top: 100px;
+}
+
+.tablespace2 {
+	margin-top: 50px;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.6);
+}
+
+.dropbtn {
+  color: #DADADA;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+	background: none;
+	z-index: 100;
+}
+
+.dropdown {
+  position: fixed;
+	scroll-snap-align: start;
+  display:block;
+	right:0 ;
+	margin-right: 30px;
+	margin-top: -80px;
+	z-index: 100;
+}
+
+.dropdown-content {
+  display: none;
+  position:auto;
+  float: left;
+	font-size: 15px;
+	z-index: 100;
+
+}
+
+.dropdown-content a {
+  color: #DADADA;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	float: left;
+	z-index: 100;
+}
+
+.dropdown-content a:hover {background-color: #283843}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+	z-index: 100;
+}
+
+#hmbgmenu {
+	width: 30px;
+}
