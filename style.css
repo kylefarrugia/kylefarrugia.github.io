@@ -11,7 +11,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-	background-color:#080808;
+	background-color:#202020;
 	color:#E3E3E3;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #8BABF8;
 }
 
 .sidebar .closebtn {
@@ -61,7 +61,7 @@ body {
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #5D71A2;
 }
 
 #main {
@@ -147,7 +147,7 @@ body {
 	}
 	
 .botstyle a:hover {
-		color: #f1f1f1;
+		color: #8BABF8;
 	}
 	
 .botstyle a:visited {
