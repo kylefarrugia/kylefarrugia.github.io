@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "orbo";
+    src: url("resources/Font/orbo-webfont.woff2") format("woff2"),
+         url("resources/Font/orbo-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+	background-color:#080808;
+	color:#E3E3E3;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: 'Orbo', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#titleblock {
+	transition: margin-left .5s;
+	line-height: 9px;
+}
+
+#hometitle {
+	transition: margin-left .5s;
+	line-height: 9px;
+	margin-top: 70px;
+}
+
+#title {
+	font-size: 70px;
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: 2px;
+	font-style: normal;
+}
+
+#titlefa {
+	font-size: 70px;
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: -4px;
+	font-style: normal;
+}
+
+
+#subtitle {
+	font-size: 25px;
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: 1px;
+	color:#B7B7B7;
+}
+
+#pagetitle {
+	font-family: 'Orbo', Arial, sans-serif;
+	font-size: 70px;
+	letter-spacing: 2px;
+	transition: margin-left .5s;
+  	padding: 16px;
+	margin-left: 30px;
+}
+
+#pagecontent {
+	margin-left: 50px;
+	margin-right: 400px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+}
+
+#pagecontentgrey {
+	margin-left: 50px;
+	margin-right: 400px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 12px;
+	color:#575757;
+	font-size: 10px;
+}
+
+#botnb {
+		margin-top: 30px;
+		padding: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	
+.botstyle {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 8px 8px 8px 32px;
+  		text-decoration: none;
+  		font-size: 25px;
+		font-family: 'Orbo', Arial, sans-serif;
+		letter-spacing: 0.5px;
+	}
+	
+.botstyle a:hover {
+		color: #f1f1f1;
+	}
+	
+.botstyle a:visited {
+		text-decoration: none;
+	}
+	
+.botstyle a {
+		color: #818181;
+		text-decoration: none;
+		padding: 8px;
+		transition: 0.3s;
+	}
+
+#OrboInput {
+	font-family: 'Orbo', Arial, sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	background:#131313;
+	color:#E3E3E3;
+	border: #E3E3E3;
+	padding: 10px;
+	width: 400px;
+	height: 70px;
+	text-align: left;
+	border-radius: 10px;
+}
+
+#infopic {
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 150px;
+	float: right;
+	clear: right;
+	border-color: #A9A9A9;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#pagecontent2 {
+	margin-left: 50px;
+	margin-right: 0;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+}
+
+.contactlink:hover {
+  color: #f1f1f1;
+}
+
+.contactlink {
+  color: #818181;
+  transition: 0.3s;
+	text-decoration: none;
+}
+
+.slideshowtitle {
+	margin-left: 50px;
+	margin-right: 400px;
+	padding: 16px;
+	line-height: 50px;
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: 1px;
+	margin-top: 50px;
+	transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+/* Slideshow */
+
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-height: 300px;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+	margin-top: 70px;
+}
+
+.slideshow-container2 {
+  max-height: 800px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	margin-top: 20px;
+	margin-bottom: 150px;
+}
+
+.slideshow-container3 {
+  max-height: 800px;
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+	margin-top: 20px;
+	margin-bottom: 150px;
+}
+
+.slideshow-container4 {
+  max-height: 800px;
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+	margin-top: 20px;
+	margin-bottom: 150px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 0px 12px;
+  position: absolute;
+  bottom: 0px;
+  text-align: left;
+  opacity: 60%;
+  background:#222222;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

@@ -2,65 +2,126 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Drawings</title>
-<link href="Assignment_style.css" rel="stylesheet" type="text/css">
+<title>Kyle Farrugia</title>
+<link href="style.css" rel="stylesheet" type="text/css">
 <link href="animate.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body id="body_sp">
+<body>
 
-<div class="dropdown">
-  <button class="dropbtn"><img id="hmbgmenu" src="Images/Assets/hmbgmenu.png" alt="Hamburger Menu Icon"></button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="photography.html">Photography</a>
-    <a href="models.html">Models</a>
-  </div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Photography.html">Photography</a>
+  <a href="Digital Work.html">Digital Work</a>
+  <a href="Models.html">Models</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
 </div>
 	
-<div>
-	<h2 class="spcontainer an0 fadeInUp">Drawings</h2>
-</div>	
-<center>
-<table id="container3" class="animated fadeIn" cellpadding="80px">
-	<tr>
-		<td><a href="#stools" class="tablelinks">Stools</a></td>
-		<td><a href="#trees" class="tablelinks">Trees</a></td>
-		<td><a href="#valletta" class="tablelinks">Valletta</a></td>
-	</tr>
-</table>
+<div id="titleblock">
+  <h1 id="pagetitle">Drawings</h1>
+</div>
+	
+<div class="slideshowtitle" id="galleryS">
+	<h2>Gallery</h2>
+	</div>	
 
+<div class="slideshow-container3">
+
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/e2.jpg" alt="Eames Side Chair" style="width:100%">
+  <div class="text">Eames Side Chair</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/m2.jpg" alt="Mdina Streets" style="width:100%">
+  <div class="text">Mdina Streets</div>
+</div>
 	
-<table cellpadding="40px">
-	<a name="stools"></a>
-	<tr><td><h4>Stools</h4></td></tr>
-	<tr><td><img class="images" src="Images/Drawings/Stools/s_1.jpg" alt="stool"></td>
-	<td><img class="images" src="Images/Drawings/Stools/s_2.jpg" alt="stool"></td></tr>
-	<tr><td><img class="images" src="Images/Drawings/Stools/s_3.jpg" alt="stool"></td>
-	<td><img class="images" src="Images/Drawings/Stools/s_4.jpg" alt="stool"></td></tr>
-</table>
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/p1.jpg" alt="Panton Chair" style="width:100%">
+  <div class="text">Panton Chair</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/e3.jpg" alt="Eames Side Chair" style="width:100%">
+  <div class="text">Eames Side Chair</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/m3.jpg" alt="Mdina Streets" style="width:100%">
+  <div class="text">Mdina Streets</div>
+</div>
 	
-<table cellpadding="40px">
-	<a name="trees"></a>
-	<tr><td><h4>Trees</h4></td></tr>
-	<tr><td><img class="images" src="Images/Drawings/Trees/t_1.jpg" alt="trees"></td>
-	<td><img class="images" src="Images/Drawings/Trees/t_2.jpg" alt="trees"></td></tr>
-	<tr><td><img class="images" src="Images/Drawings/Trees/t_3.jpg" alt="trees"></td>
-	<td><img class="images" src="Images/Drawings/Trees/t_4.jpg" alt="trees"></td></tr>
-</table>
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/p2.jpg" alt="Panton Chair" style="width:100%">
+  <div class="text">Panton Chair</div>
+</div>
 	
-<table cellpadding="40px">
-	<a name="valletta"></a>
-	<tr><td><h4>Valletta</h4></td></tr>
-	<tr><td><img class="images" src="Images/Drawings/Valletta/v_1.jpg" alt="valletta"></td>
-	<td><img class="images" src="Images/Drawings/Valletta/v_2.jpg" alt="valletta"></td></tr>
-	<tr><td><img class="images" src="Images/Drawings/Valletta/v_3.jpg" alt="valletta"></td>
-	<td><img class="images" src="Images/Drawings/Valletta/v_4.jpg" alt="valletta"></td></tr>
-</table>
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/m1.jpg" alt="Mdina Streets" style="width:100%">
+  <div class="text">Mdina Streets</div>
+</div>
 	
-</center>	
+<div class="mySlides fade">
+  <img src="resources/Drawings/JPEG/e1.jpg" alt="Eames Side Chair" style="width:100%">
+  <div class="text">Eames Side Chair</div>
+</div>
 	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
+
+<script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("pagetitle").style.marginLeft = "280px";
+	document.getElementById("galleryS").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("pagetitle").style.marginLeft= "30px";
+	document.getElementById("galleryS").style.marginLeft= "50px";
+}
+</script>
+   
 </body>
 </html>

@@ -1,39 +1,115 @@
 <!doctype html>
 <html>
-<center>
 <head>
 <meta charset="utf-8">
 <title>Kyle Farrugia</title>
-<link href="Assignment_style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 <link href="animate.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body id="body_mp">
+<body>
+
+
+<div id="mySidebar" class="sidebar" align="center">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="About.html">About</a>
+  <a href="Photography.html">Photography</a>
+  <a href="Digital Work.html">Digital Work</a>
+  <a href="Models.html">Models</a>
+  <a href="Drawings.html">Drawings</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
 	
-	<div id="container">
-		<div>
-			<h1 href="#" id="title" class="animated fadeInUp">Kyle Farrugia</h1>
-		</div>
-		<div>
-			<h3 href="#" id="subtitle" class="animated fadeInUp">Portfolio</h3>
-		</div>
-	</div>
+<div id="hometitle" align="center">
+  <h1 id="title">Kyle <b id="titlefa">F</b>arrugia</h1>
+	<h4 id="subtitle">Portfolio</h4>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("pagecontent").style.marginLeft = "300px";
+	document.getElementById("slideshowbox").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("pagecontent").style.marginLeft= "50px";
+	document.getElementById("slideshowbox").style.marginLeft= "0px";
+}
+</script>
+
 	
 	
-	<table cellpadding="7px" id="container2">
-		<tr>
-			<td width="350px"><a href="drawings.html"><img class="animated fadeIn an1 imgtbl opacimg" alt="Drawings" src="Images/Main Page Preview/s_1.jpg"></a></td>
-			<td width="350px"><a href="photography.html"><img class="imgtbl animated an2 fadeIn opacimg" src="Images/Main Page Preview/p1.jpg" alt="Photography"></a></td>
-			<td width="350px"><a href="models.html"><img class="imgtbl animated an3 fadeIn opacimg" src="Images/Main Page Preview/m1.jpg" alt="Models"></a></td>
-		</tr>
-		<tr>
-			<td width="350px"><a href="drawings.html" class="sectionlinks animated fadeInUp an1">Drawings</a></td>
-			<td width="350px"><a href="photography.html" class="sectionlinks animated an2 fadeInUp">Photography</a></td>
-			<td width="350px"><a href="models.html" class="sectionlinks animated an3 fadeInUp">Models</a></td>
-		</tr>
-	</table>
+	
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <a href="Photography.html"><img src="resources/Home/NTD.jpg" alt="Notre Dame Gate" style="width:100%"></a>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="Digital Work.html"><img src="resources/Home/Orbo.jpg" alt="Orbo Typeface" style="width:100%"></a>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="Digital Work.html"><img src="resources/Home/Tundor.jpg" alt="Tundor Chair Design" style="width:100%"></a>
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+	
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+<div id="botnb">
+	<div class="botstyle"><a href="About.html">About</a></div>
+	<div class="botstyle"><a href="Photography.html">Photography</a></div>
+	<div class="botstyle"><a href="Digital Work.html">Digital Work</a></div>
+	<div class="botstyle"><a href="Models.html">Models</a></div>
+	<div class="botstyle"><a href="Drawings.html">Drawings</a></div>
+	<div class="botstyle"><a href="Contact.html">Contact</a></div>
+	
+	</div>	
 	
 </body>
-</center>
 </html>

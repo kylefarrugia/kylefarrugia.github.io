@@ -2,50 +2,146 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Models</title>
-<link href="Assignment_style.css" rel="stylesheet" type="text/css">
+<title>Kyle Farrugia</title>
+<link href="style.css" rel="stylesheet" type="text/css">
 <link href="animate.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body id="body_sp">
+<body>
 
-<div class="dropdown">
-  <button class="dropbtn"><img id="hmbgmenu" src="Images/Assets/hmbgmenu.png" alt="Hamburger Menu Icon"></button>
-  <div class="dropdown-content">
-	<a href="index.html">Home</a>
-    <a href="drawings.html">Drawings</a>
-	<a href="photography.html">Photography</a>
-  </div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Photography.html">Photography</a>
+  <a href="Digital Work.html">Digital Work</a>
+  <a href="Drawings.html">Drawings</a>
+  <a href="Contact.html">Contact</a>
 </div>
 
-<div>
-	<h2 class="spcontainer an0 fadeInUp">Models</h2>
-</div>	
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+	
+<div id="titleblock">
+  <h1 id="pagetitle">Models</h1>
+</div>
+	
+<div class="slideshowtitle" id="galleryS">
+	<h2>Gallery</h2>
+	</div>	
 
-<center>
-<table class="animated fadeIn an05 tablespace2" cellpadding="25px" >
-	<tr><td colspan="3"><h3>House Design</h3></td></tr>
-	<tr>
-		<td cellpadding="-10px"><img class="models animated fadeIn an05 zoom" src="Images/Models/JPEG/IMG_2559.jpg" alt="House"></td>
-		<td><img class="models zoom" src="Images/Models/JPEG/IMG_2560.jpg" alt="House"></td>
-		<td><img class="models zoom" src="Images/Models/JPEG/IMG_2562.jpg" alt="House"></td></tr>
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <img src="resources/Models/h1.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/h2.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/h3.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/h4.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
 	
-	<tr><td colspan="3"><h3><br/><br/><br/>Topographical Model</h3></td></tr>
-	<tr>
-		<td align="center"><img class="models zoom" src="Images/Models/JPEG/IMG_2552.jpg" alt="Plan View"></td>
-		<td><img class="models zoom" src="Images/Models/JPEG/IMG_2554.jpg" alt="Topographical Model"></td>
-		<td><img class="models zoom" src="Images/Models/JPEG/IMG_2556.jpg" alt="Topographical Model"></td>
-	</tr>
-	<tr>
-		<td align="center"><img class="models zoom" src="Images/Models/JPEG/IMG_2557.jpg" alt="Topographical Model"></td>
-		<td><img class="models zoom" src="Images/Models/JPEG/IMG_2558.jpg" alt="Topographical Model"></td>
-	</tr>
+<div class="mySlides fade">
+  <img src="resources/Models/t1.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/t2.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/t3.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/t4.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
 	
-</table>
-	<br/><br/><br/><br/> <!--Spacing for Scaling Images-->
-</center>	
+<div class="mySlides fade">
+  <img src="resources/Models/t5.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/hu1.jpg" alt="House Model" style="width:100%">
+  <div class="text">House Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/hu2.jpg" alt="House Model" style="width:100%">
+  <div class="text">House Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/hu3.jpg" alt="House Model" style="width:100%">
+  <div class="text">House Model</div>
+</div>
 	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
+
+<script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("pagetitle").style.marginLeft = "280px";
+	document.getElementById("galleryS").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("pagetitle").style.marginLeft= "30px";
+	document.getElementById("galleryS").style.marginLeft= "50px";
+}
+</script>
+   
 </body>
 </html>

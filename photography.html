@@ -2,64 +2,193 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Photography</title>
-<link href="Assignment_style.css" rel="stylesheet" type="text/css">
+<title>Kyle Farrugia</title>
+<link href="style.css" rel="stylesheet" type="text/css">
 <link href="animate.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body id="body_sp">
+<body>
 
-<div class="dropdown">
-  <button class="dropbtn"><img id="hmbgmenu" src="Images/Assets/hmbgmenu.png" alt="Hamburger Menu Icon"></button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="drawings.html">Drawings</a>
-    <a href="models.html">Models</a>
-  </div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Digital Work.html">Digital Work</a>
+  <a href="Models.html">Models</a>
+  <a href="Drawings.html">Drawings</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
 </div>
 	
-<div>
-	<h2 class="spcontainer an0 fadeInUp">Photography</h2>
+<div id="titleblock">
+  <h1 id="pagetitle">Photography</h1>
 </div>
 	
-<center>	
-<table class="animated fadeIn an05 tablespace" cellpadding="10px">
-	<tr><td><img class="photography animated fadeIn an05" src="Images/Photography/BarrakkaC.jpg" alt="Lower Barrakka"></td></tr>
 	
-	<tr><td><h3>Lower Barrakka, Valletta</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography animated fadeIn an05" src="Images/Photography/FososG.jpg" alt="Fosos"></td></tr>
-	<tr><td><h3 class="animated fadeIn an05">Fosos, Furjana</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Haunted HouseG.jpg" alt="Haunted House"></td></tr>
-	<tr><td><h3>Abandoned House, Marsaxlokk</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Lapsi CastleG.jpg" alt="Lapsi Castle"></td></tr>
-	<tr><td><h3>Castle, Lapsi</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/LapsiGarC.jpg" alt="Lapsi"></td></tr>
-	<tr><td><h3>Lapsi</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/MarsamxettG.jpg" alt="Marsamxett"></td></tr>
-	<tr><td><h3>Marsamxett, Valletta</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/MarsaxlokkC.jpg" alt="Marsaxlokk"></td></tr>
-	<tr><td><h3>Marsaxlokk Harbour</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Mdina 1C.jpg" alt="Mdina"></td></tr>
-	<tr><td><h3>Mdina</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/MdinaG.jpg" alt="Triq is-Sur"></td></tr>
-	<tr><td><h3>Triq is-Sur, Mdina</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Migra l-FerhaG.jpg" alt="Migra l-Ferha"></td></tr>
-	<tr><td><h3>Migra l-Ferha, Mtahleb</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/MtahlebC.jpg" alt="Mtahleb Cliffs"></td></tr>
-	<tr><td><h3>Mtahleb Cliffs</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Notre Dame Gate_GS.jpg" alt="Notre Dame Gate"></td></tr>
-	<tr><td><h3>Notre Dame Gate, Birgu</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Tigne AptsG.jpg" alt="Tigne Apartments"></td></tr>
-	<tr><td><h3>Tigne Apartments, Sliema</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/Zabbar ChurchC.jpg" alt="Church"></td></tr>
-	<tr><td><h3>Zabbar Church</h3><br/><br/><br/></td></tr>
-	<tr><td><img class="photography" src="Images/Photography/ZurrieqG.jpg" alt="Wied Babu"></td></tr>
-	<tr><td><h3>Wied Babu, Zurrieq</h3><br/><br/><br/></td></tr>
+<div class="slideshowtitle" id="galleryS">
+	<h2>Gallery</h2>
+	</div>	
 
-</table>
-</center>	
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Birgu.jpg" alt="Birgu Fisherman" style="width:100%">
+  <div class="text">Fisherman, Birgu</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Haunted HouseG.jpg" alt="Haunted House, Marsaxlokk" style="width:100%">
+  <div class="text">Haunted House, Marsaxlokk</div>
+</div>	
 	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Chinese Garden.jpg" alt="Chinese Garden, Santa Lucija" style="width:100%">
+  <div class="text">Chinese Garden, Santa Lucija</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/MarsaxlokkC.jpg" alt="Marsaxlokk Harbour, Marsaxlokk" style="width:100%">
+  <div class="text">Marsaxlokk Harbour, Marsaxlokk</div>
+</div>
+		
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Ducks.jpg" alt="Female Mallards in Zabbar" style="width:100%">
+  <div class="text">Female Mallards, Zabbar</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/MtahlebC.jpg" alt="Mtahleb, Rabat" style="width:100%">
+  <div class="text">Mtahleb, Rabat</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Mint2.jpg" alt="Mint Plant" style="width:100%">
+  <div class="text">Mint Plant, Zabbar</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/FososG.jpg" alt="Fosos, Floriana" style="width:100%">
+  <div class="text">Fosos, Floriana</div>
+</div>	
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Tigne AptsG.jpg" alt="Tigne Apartments, Sliema" style="width:100%">
+  <div class="text">Tigne Apartments, Sliema</div>
+</div>	
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Lapsi CastleG.jpg" alt="Lapsi Castle, Siggiewi" style="width:100%">
+  <div class="text">Lapsi Castle, Siggiewi</div>
+</div>	
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/MarsamxettG.jpg" alt="Marsamxett Port, Valletta" style="width:100%">
+  <div class="text">Marsamxett Port, Valletta</div>
+</div>	
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/ZurrieqG.jpg" alt="Wied Babu, Zurrieq" style="width:100%">
+  <div class="text">Wied Babu, Zurrieq</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Mint.jpg" alt="Mint Plants" style="width:100%">
+  <div class="text">Mint Plants</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Mdina 1C.jpg" alt="Mdina House, Mdina" style="width:100%">
+  <div class="text">Mdina House, Mdina</div>
+</div>	
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/MdinaG.jpg" alt="Is-Sur Street, Mdina" style="width:100%">
+  <div class="text">Is-Sur Street, Mdina</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/LapsiGarC.jpg" alt="Ghar Lapsi, Siggiewi" style="width:100%">
+  <div class="text">Ghar Lapsi, Siggiewi</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Migra l-FerhaG.jpg" alt="Migra l-Ferha, Rabat" style="width:100%">
+  <div class="text">Migra l-Ferha, Rabat</div>
+</div>	
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Notre Dame Gate_GS.jpg" alt="Notre Dame Gate, Birgu" style="width:100%">
+  <div class="text">Notre Dame Gate, Birgu</div>
+</div>	
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Tigne 1C.jpg" alt="Tigne Point Flats, Sliema" style="width:100%">
+  <div class="text">Tigne Point Flats, Sliema</div>
+</div>
+
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Zabbar ChurchC.jpg" alt="Zabbar Parish Church, Zabbar" style="width:100%">
+  <div class="text">Zabbar Parish Church, Zabbar</div>
+</div>	
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Moon3_6x.jpg" alt="Moon" style="width:100%">
+  <div class="text">The Moon</div>
+</div>	
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
+
+<script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("pagetitle").style.marginLeft = "280px";
+	document.getElementById("galleryS").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("pagetitle").style.marginLeft= "30px";
+	document.getElementById("galleryS").style.marginLeft= "50px";
+}
+</script>
+   
 </body>
 </html>

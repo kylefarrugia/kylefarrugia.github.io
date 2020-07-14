@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kyle Farrugia</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="Photography.html">Photography</a>
+  <a href="Digital Work.html">Digital Work</a>
+  <a href="Models.html">Models</a>
+  <a href="Drawings.html">Drawings</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+	
+<div id="titleblock">
+  <h1 id="pagetitle">About</h1>
+</div>
+	
+<div>
+	<img src="resources/About/Portrait.jpg" alt="Website Logo" id="infopic">
+	<p id="pagecontent2">Currently I am a University Student aspiring to become a Structural Civil Engineer. As described by multiple certificates and past employers/lecturers, I am experienced in Customer Handling and Communication, also capable of being a Leader who is Respectful, Responsible, and can work in a team. I am a fast learner with great interest in learning. <br/> <br/> In my spare time I enjoy travelling, photography, video and photo editing, and reading scientific articles. <br/><br/> For more information do not hesitate to <a href="Contact.html" class="contactlink">contact me</a>.
+</p>	
+</div>
+	
+<div>
+	<p id="pagecontentgrey">This website was written in HTML and CSS by Kyle Farrugia. <br/>Kyle Farrugia is the sole owner of this website. <br/>The typeface 'Orbo' which is being used in this website was created and is owned by Kyle Farrugia.<br/>All the images on the website are owned by Kyle Farrugia.<br/><br/>Any unauthorised use of the property mentioned above is unlawful under Copyright laws.</p>
+	</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("pagetitle").style.marginLeft = "280px";
+	document.getElementById("pagecontent2").style.marginLeft = "300px";
+	document.getElementById("pagecontentgrey").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("pagetitle").style.marginLeft= "30px";
+	document.getElementById("pagecontent2").style.marginLeft= "50px";
+	document.getElementById("pagecontentgrey").style.marginLeft= "50px";
+}
+</script>
+   
+</body>
+</html>
