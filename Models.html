@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kyle Farrugia</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Photography.html">Photography</a>
+  <a href="Digital Work.html">Digital Work</a>
+  <a href="Drawings.html">Drawings</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+	
+<div id="titleblock">
+  <h1 id="pagetitle">Models</h1>
+</div>
+	
+<div class="slideshowtitle" id="galleryS">
+	<h2>Gallery</h2>
+	</div>	
+
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <img src="resources/Models/h1.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/h2.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/h3.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/h4.jpg" alt="Hompesch Gate, Zabbar Model" style="width:100%">
+  <div class="text">Hompesch Gate, Zabbar Model</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Models/t1.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/t2.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/t3.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/t4.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Models/t5.jpg" alt="Topographical Model" style="width:100%">
+  <div class="text">Topographical Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/hu1.jpg" alt="House Model" style="width:100%">
+  <div class="text">House Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/hu2.jpg" alt="House Model" style="width:100%">
+  <div class="text">House Model</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Models/hu3.jpg" alt="House Model" style="width:100%">
+  <div class="text">House Model</div>
+</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
+
+<script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("pagetitle").style.marginLeft = "280px";
+	document.getElementById("galleryS").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("pagetitle").style.marginLeft= "30px";
+	document.getElementById("galleryS").style.marginLeft= "50px";
+}
+</script>
+   
+</body>
+</html>
