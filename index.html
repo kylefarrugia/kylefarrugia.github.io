@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body>
+<body class="animated an1 fadeIn" onUnload="myFunction()">
 
 
 <div id="mySidebar" class="sidebar" align="center">
@@ -99,6 +99,11 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+	
+function myFunction() {
+	body.fadeOut(500)
+}	
+	
 </script>
 
 

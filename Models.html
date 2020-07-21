@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body>
+<body class="animated an1 fadeIn" onUnload="myFunction()">
 
 
 <div id="mySidebar" class="sidebar">
@@ -141,6 +141,11 @@ function closeNav() {
 	document.getElementById("pagetitle").style.marginLeft= "30px";
 	document.getElementById("galleryS").style.marginLeft= "50px";
 }
+	
+function myFunction() {
+	body.fadeOut(500)
+}	
+	
 </script>
    
 </body>

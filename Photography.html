@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 
-<body>
+<body class="animated an1 fadeIn" onUnload="myFunction()">
 
 
 <div id="mySidebar" class="sidebar">
@@ -152,10 +152,14 @@
   <div class="text">Tigne Point Flats, Sliema</div>
 </div>
 
-
 <div class="mySlides fade">
   <img src="resources/Photography/JPEG/Photomontages/Zabbar ChurchC.jpg" alt="Zabbar Parish Church, Zabbar" style="width:100%">
   <div class="text">Zabbar Parish Church, Zabbar</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/JPEG/Photomontages/Valletta.jpg" alt="Valletta from St. Angelo" style="width:100%">
+  <div class="text">Valletta from St. Angelo</div>
 </div>	
 
 <div class="mySlides fade">
@@ -208,6 +212,11 @@ function closeNav() {
 	document.getElementById("pagetitle").style.marginLeft= "30px";
 	document.getElementById("galleryS").style.marginLeft= "50px";
 }
+	
+function myFunction() {
+	body.fadeOut(500)
+}	
+	
 </script>
    
 </body>
