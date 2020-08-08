@@ -129,7 +129,9 @@ function myFunction() {
 </script>
    
 <script>
-$(document).ready(initComparisons());	
+$(document).ready(initComparisons());
+ 
+    $(window).on( "load", initComparisons());
 	
 function initComparisons() {
   var x, i;
