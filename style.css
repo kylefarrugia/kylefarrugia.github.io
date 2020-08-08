@@ -204,7 +204,7 @@ body {
 .contactlink {
   color: #818181;
   transition: 0.3s;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .slideshowtitle {
@@ -360,4 +360,98 @@ img {vertical-align: middle;}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Image Slider */
+
+.img-comp-container {
+  position:relative;
+  height: 500px;
+  max-width: 1000px;
+  margin-left: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	vertical-align: middle;
+	align-items: center;
+}
+
+.img-comp-img {
+  position: absolute;
+  max-height: 800px;
+  max-width: 1000px;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 7px;
+  height: 500px;
+  background-color: #8BABF8;
+  opacity: 0.5;
+}
+
+#pagecontent3 {
+	margin-left: 50px;
+	margin-right: 300px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+}
+
+#pagecontent4 {
+	margin-left: 50px;
+	margin-right: 300px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+}
+
+#pagecontent5 {
+	margin-left: 90px;
+	margin-right: 300px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+	margin-top: -30px;
+	margin-bottom: -20px;
+}
+
+#course {
+	margin-left: 50px;
+	margin-right: 300px;
+	margin-top: -20px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+	font-size: 20px;
+}
+
+.b1 {
+	color: #8BABF8;
+	}
+
+#form {
+	margin-left: 50px;
+	margin-right: 300px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
 }
