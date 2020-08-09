@@ -7,6 +7,7 @@
 <link href="animate.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="animated an1 fadeIn" onUnload="myFunction()">
@@ -212,7 +213,7 @@ function initComparisons() {
 	
 <script>
 /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-initComparisons();
+$(document).ready(initComparisons);
 </script>
 	
 </body>
