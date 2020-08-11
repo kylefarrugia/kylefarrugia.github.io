@@ -455,3 +455,13 @@ img {vertical-align: middle;}
 	padding: 16px;
 	line-height: 22px;
 }
+
+#pagecontentgrey2 {
+	margin-left: 50px;
+	margin-right: 400px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 12px;
+	color:#878787;
+	font-size: 14px;
+}
