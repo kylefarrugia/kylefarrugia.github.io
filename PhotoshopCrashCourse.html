@@ -57,6 +57,8 @@
 		To <b>apply</b> for the course, fill in the form <a href="#form" class="contactlink">below</a>.
 	</p>
 	<p id="course">This Photoshop Crash Course takes approximately <b class="b1">2 hours</b> and costs <b class="b1">€30</b></p>
+	
+	<p id="pagecontentgrey2">Please reload the page if the image slider below doesn't load correctly.</p>
 </div>	
 	
 <div id="edits" class="img-comp-container">
@@ -110,6 +112,7 @@ function openNav() {
 	document.getElementById("pagecontent4").style.marginLeft = "300px";
 	document.getElementById("pagecontent5").style.marginLeft = "340px";
 	document.getElementById("form").style.marginLeft = "300px";
+	document.getElementById("pagecontentgrey2").style.marginLeft = "300px";
 }
 
 function closeNav() {
@@ -121,6 +124,7 @@ function closeNav() {
 	document.getElementById("pagecontent4").style.marginLeft= "50px";
 	document.getElementById("pagecontent5").style.marginLeft= "90px";
 	document.getElementById("form").style.marginLeft= "50px";
+	document.getElementById("pagecontentgrey2").style.marginLeft= "50px";
 }
 	
 function myFunction() {
@@ -214,8 +218,7 @@ function initComparisons() {
 	
 <script>
 /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-$(document).ready(initComparisons);
-setTimeout(initComparisons, 3000);
+initComparisons()
 </script>
 	
 </body>
