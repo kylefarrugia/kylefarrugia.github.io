@@ -465,3 +465,7 @@ img {vertical-align: middle;}
 	color:#878787;
 	font-size: 14px;
 }
+
+#imagehide {
+	display: none;
+}
