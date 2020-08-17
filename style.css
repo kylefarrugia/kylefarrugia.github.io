@@ -466,6 +466,16 @@ img {vertical-align: middle;}
 	font-size: 14px;
 }
 
+#pagecontentgrey3 {
+	margin-left: 50px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 12px;
+	color:#878787;
+	font-size: 14px;
+}
+
+
 #imagehide {
 	display: none;
 }
@@ -482,4 +492,17 @@ img {vertical-align: middle;}
 	#pagecontent5 {
 	margin-right: 0px;	
 }
+	
+	#form {
+	margin-left: 50px;
+	margin-right: 50px;
+	}
+	
+	#course {
+		margin-right: 0px;
+	}
+	
+	#pagecontentgrey2 {
+		margin-right: 0px;
+	}
 }
