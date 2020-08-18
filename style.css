@@ -525,12 +525,20 @@ img {vertical-align: middle;}
 	margin-right: 0px;	
 }
 	
+	#pagecontent6 {
+	margin-right: 0px;	
+}
+	
 	#form {
 	margin-left: 50px;
 	margin-right: 50px;
 	}
 	
 	#course {
+		margin-right: 0px;
+	}
+	
+	#course2 {
 		margin-right: 0px;
 	}
 	
