@@ -216,6 +216,7 @@ body {
 	letter-spacing: 1px;
 	margin-top: 50px;
 	transition: margin-left .5s;
+	font-size: 24px;
 }
 
 
@@ -434,6 +435,14 @@ img {vertical-align: middle;}
 	margin-bottom: -20px;
 }
 
+#pagecontent6 {
+	margin-left: 50px;
+	margin-right: 300px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 22px;
+}
+
 #course {
 	margin-left: 50px;
 	margin-right: 300px;
@@ -441,6 +450,16 @@ img {vertical-align: middle;}
 	transition: margin-left .5s;
 	padding: 16px;
 	line-height: 22px;
+	font-size: 20px;
+}
+
+#course2 {
+	margin-left: 50px;
+	margin-right: 300px;
+	margin-top: -20px;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 28px;
 	font-size: 20px;
 }
 
@@ -479,6 +498,19 @@ img {vertical-align: middle;}
 #imagehide {
 	display: none;
 }
+
+#subtitle1 {
+	margin-left: 50px;
+	margin-right: 400px;
+	
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: 1px;
+	margin-top: 86px;
+	margin-bottom: 6px;
+	transition: margin-left .5s;
+	font-size: 35px;
+}
+
 
 @media only screen and (max-width: 1000px) {
 	#pagecontent3 {
