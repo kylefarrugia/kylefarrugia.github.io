@@ -407,6 +407,7 @@ img {vertical-align: middle;}
   height: 500px;
   background-color: #8BABF8;
   opacity: 0.5;
+  border-radius: 1%;
 }
 
 #pagecontent3 {
