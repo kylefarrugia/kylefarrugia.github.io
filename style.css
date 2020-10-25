@@ -388,7 +388,7 @@ img {vertical-align: middle;}
 
 .img-comp-img {
   position: absolute;
-  max-height: 800px;
+  max-height: 1200px;
   max-width: 1000px;
   overflow:hidden;
 }
