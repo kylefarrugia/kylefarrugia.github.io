@@ -389,6 +389,7 @@ img {vertical-align: middle;}
 .img-comp-img {
   position: absolute;
   max-height: 800px;
+  max-width: 1000px;
   overflow:hidden;
 }
 
