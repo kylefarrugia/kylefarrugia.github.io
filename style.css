@@ -389,7 +389,6 @@ img {vertical-align: middle;}
 .img-comp-img {
   position: absolute;
   max-height: 800px;
-  max-width: 1000px;
   overflow:hidden;
 }
 
@@ -407,7 +406,6 @@ img {vertical-align: middle;}
   height: 500px;
   background-color: #8BABF8;
   opacity: 0.5;
-  border-radius: 1%;
 }
 
 #pagecontent3 {
