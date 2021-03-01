@@ -24,7 +24,7 @@
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=794677011270616&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->	
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body class="animated an1 fadeIn" onUnload="myFunction()">
@@ -33,8 +33,8 @@
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="index.html">Home</a>
+  <a href="About.html">About</a>
   <a href="Photography.html">Photography</a>
-  <a href="Architectural Projects.html">Architectural Projects</a>
   <a href="Digital Work.html">Digital Work</a>
   <a href="Models.html">Models</a>
   <a href="Drawings.html">Drawings</a>
@@ -47,34 +47,38 @@
 </div>
 	
 <div id="titleblock">
-  <h1 id="pagetitle">About</h1>
+  <h1 id="pagetitle">Architectural Projects</h1>
 </div>
-	
-<div>
-	<img src="resources/About/Portrait.jpg" alt="Website Logo" id="infopic">
-	<p id="pagecontent2">Currently I am a University Student aspiring to become a Structural Civil Engineer. As described by multiple certificates and past employers/lecturers, I am experienced in Customer Handling and Communication, also capable of being a Leader who is Respectful, Responsible, and can work in a team. I am a fast learner with great interest in learning. <br/> <br/> In my spare time I enjoy travelling, photography, video and photo editing, and reading scientific articles. <br/><br/> For more information do not hesitate to <a href="Contact.html" class="contactlink">contact me</a>.
-</p>	
-</div>
-	
-<div>
-	<p id="pagecontentgrey">This website is written in HTML and CSS by Kyle Farrugia. <br/>Kyle Farrugia is the sole owner of this website. <br/>The typeface 'Orbo' which is being used in this website was created and is owned by Kyle Farrugia.<br/>All the images on this website are owned by Kyle Farrugia.<br/><br/>Any unauthorised use of the property mentioned above is unlawful under Copyright laws. © Kyle Farrugia 2020.</p>
-	</div>
 
+<div id="pagecontent7">
+		
+	<div class="imgpreviewholder"><a class="previewlink" href="Campus Artistic Installation.html">		
+		<div class="imgpreview" id="ArtInsprev"></div>
+		<p>UM Campus Art Installation</p></a>		
+	</div>	
+	
+	<div class="imgpreviewholder"><a class="previewlink" href="Miscellaneous.html">
+		<div class="imgpreview" id="Miscprev"></div>
+		<p>Miscellaneous</p></a>
+	</div>
+</div>
+	
+
+
+	
 <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 	document.getElementById("pagetitle").style.marginLeft = "280px";
-	document.getElementById("pagecontent2").style.marginLeft = "300px";
-	document.getElementById("pagecontentgrey").style.marginLeft = "300px";
+	document.getElementById("pagecontent7").style.marginLeft = "300px";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 	document.getElementById("pagetitle").style.marginLeft= "30px";
-	document.getElementById("pagecontent2").style.marginLeft= "50px";
-	document.getElementById("pagecontentgrey").style.marginLeft= "50px";
+	document.getElementById("pagecontent7").style.marginLeft= "50px";
 }
 	
 function myFunction() {

@@ -94,6 +94,13 @@ body {
 	font-style: normal;
 }
 
+#titlefa1 {
+	font-size: 70px;
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: -4px;
+	font-style: normal;
+}
+
 
 #subtitle {
 	font-size: 25px;
@@ -309,6 +316,7 @@ img {vertical-align: middle;}
 	margin-bottom: 150px;
 }
 
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -366,12 +374,69 @@ img {vertical-align: middle;}
 
 
 
+/* Architectural Projects Page */
 
+.imgpreview {
+	height: 250px;
+	width: 250px;
+	max-height: 250px;
+	max-width: 250px;
+	margin-bottom: 5px;
+	position: relative;
+	border: 2px solid #818181;
+}
 
+.imgpreviewholder {
+	margin-left: 50px;
+	float: left;
+}
 
+.previewlink:hover {
+		color: #8BABF8;
+	}
+	
+.previewlink:visited {
+		text-decoration: none;
+	}
+	
+.previewlink {
+		color: #818181;
+		text-decoration: none;
+		padding: 8px;
+		transition: 0.4s;
+	}
 
+.zoomarch {
+	transition: transform 0.2s;
+}
 
+.zoomarch:hover {
+	transform: scale(1.7);
+}
 
+	/* Image Previews */
+
+	#Miscprev {
+		background: url("resources/Architectural Projects/Miscellaneous/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Miscprev:hover {
+		background: url("resources/Architectural Projects/Miscellaneous/2.jpg");
+		background-size: contain;
+	}
+
+	#ArtInsprev {
+		background: url("resources/Architectural Projects/Campus Artistic Project/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#ArtInsprev:hover {
+		background: url("resources/Architectural Projects/Campus Artistic Project/2.jpg");
+		background-size: contain;
+	}
 
 /* Image Slider */
 
@@ -442,6 +507,17 @@ img {vertical-align: middle;}
 	padding: 16px;
 	line-height: 22px;
 }
+
+#pagecontent7 {
+	margin-left: 50px;
+	margin-right: 0;
+	transition: margin-left .5s;
+	padding: 16px;
+	line-height: 20px;
+	font-size: 20px;
+	max-width: 2000px;
+}
+
 
 #course {
 	margin-left: 50px;
