@@ -186,14 +186,15 @@ body {
 }
 
 #infopic {
-	width: 200px;
+	width: 500px;
 	margin-left: 50px;
 	margin-right: 150px;
-	float: right;
+	float: below;
 	clear: right;
-	border-color: #A9A9A9;
+	border-color: #202020;
 	border-style: solid;
 	border-width: 2px;
+	transition: margin-left .5s;
 }
 
 #pagecontent2 {
