@@ -24,7 +24,7 @@
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=794677011270616&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->
+<!-- End Facebook Pixel Code -->	
 </head>
 
 <body class="animated an1 fadeIn" onUnload="myFunction()">
@@ -35,6 +35,7 @@
   <a href="index.html">Home</a>
   <a href="About.html">About</a>
   <a href="Photography.html">Photography</a>
+  <a href="Architectural Projects.html">Architectural Projects</a>
   <a href="Digital Work.html">Digital Work</a>
   <a href="Models.html">Models</a>
   <a href="Drawings.html">Drawings</a>
@@ -47,31 +48,73 @@
 </div>
 	
 <div id="titleblock">
-  <h1 id="pagetitle">Architectural Projects</h1>
-</div>
-
-<div id="pagecontent7">
-		
-	<div class="imgpreviewholder"><a class="previewlink" href="Modest House.html">		
-		<div class="imgpreview" id="ModHprev"></div>
-		<p>Modest House Design</p></a>
-	</div>	
-	
-	<div class="imgpreviewholder"><a class="previewlink" href="Campus Artistic Installation.html">		
-		<div class="imgpreview" id="ArtInsprev"></div>
-		<p>UM Campus Art Installation</p></a>		
-	</div>	
-	
-	<div class="imgpreviewholder"><a class="previewlink" href="Miscellaneous.html">
-		<div class="imgpreview" id="Miscprev"></div>
-		<p>Miscellaneous</p></a>
-	</div>
+  <h1 id="pagetitle">Modest House Design</h1>
 </div>
 	
-
-
 	
+<div class="slideshowtitle" id="pagecontent7">
+	<a class="previewlink" href="Architectural Projects.html">Architectural Projects</a>
+	</div>	
+
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Residential House Design/Modest House-01.jpg" alt="Modest House Design" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Residential House Design/Modest House-02.jpg" alt="Modest House Design" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Residential House Design/Modest House-03.jpg" alt="Modest House Design" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Residential House Design/Modest House-04.jpg" alt="Modest House Design" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Residential House Design/Modest House-05.jpg" alt="Modest House Design" style="width:100%">
+  <div class="text"></div>
+</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
+
 <script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";

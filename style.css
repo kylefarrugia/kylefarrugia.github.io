@@ -438,6 +438,99 @@ img {vertical-align: middle;}
 		background-size: contain;
 	}
 
+	#ModHprev {
+		background: url("resources/Architectural Projects/Residential House Design/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#ModHprev:hover {
+		background: url("resources/Architectural Projects/Residential House Design/2.jpg");
+		background-size: contain;
+	}
+
+	#Featprev {
+		background: url("resources/Photography/Featured/Preview/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Featprev:hover {
+		background: url("resources/Photography/Featured/Preview/2.jpg");
+		background-size: contain;
+	}
+
+	#Archprev {
+		background: url("resources/Photography/Architecture/Preview/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Archprev:hover {
+		background: url("resources/Photography/Architecture/Preview/2.jpg");
+		background-size: contain;
+	}
+
+	#Landprev {
+		background: url("resources/Photography/Landscapes/Preview/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Landprev:hover {
+		background: url("resources/Photography/Landscapes/Preview/2.jpg");
+		background-size: contain;
+	}
+
+	#Natprev {
+		background: url("resources/Photography/Nature/Preview/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Natprev:hover {
+		background: url("resources/Photography/Nature/Preview/2.jpg");
+		background-size: contain;
+	}
+
+	#Portprev {
+		background: url("resources/Photography/Portraits/Preview/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Portprev:hover {
+		background: url("resources/Photography/Portraits/Preview/2.jpg");
+		background-size: contain;
+	}
+
+	#Rideprev {
+		background: url("resources/Photography/RideOn/Preview/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Rideprev:hover {
+		background: url("resources/Photography/RideOn/Preview/2.jpg");
+		background-size: contain;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Image Slider */
 
 .img-comp-container {
