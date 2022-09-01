@@ -33,6 +33,7 @@
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="index.html">Home</a>
+  <a href="About.html">About</a>
   <a href="Photography.html">Photography</a>
   <a href="Architectural Projects.html">Architectural Projects</a>
   <a href="Digital Work.html">Digital Work</a>
@@ -47,34 +48,80 @@
 </div>
 	
 <div id="titleblock">
-  <h1 id="pagetitle">About</h1>
+  <h1 id="pagetitle">Mixed Use and Housing Project</h1>
 </div>
 	
-<div>
-	<img src="resources/About/LapsiDP.jpg" alt="Website Logo" id="infopic2">
-	<p id="pagecontent2">Currently I am a University Student aspiring to become a Structural Civil Engineer. As described by multiple certificates and past employers/lecturers, I am experienced in Customer Handling and Communication, also capable of being a Leader who is Respectful, Responsible, and can work in a team. I am a fast learner with great interest in learning. <br/> <br/> In my spare time I enjoy travelling, photography, video and photo editing, and reading scientific articles. <br/><br/> For more information do not hesitate to <a href="Contact.html" class="contactlink">contact me</a>.
-</p>	
+	
+<div class="slideshowtitle" id="pagecontent7">
+	<a class="previewlink" href="Architectural Projects.html">Architectural Projects</a>
+	</div>	
+
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Mixed Use and Housing Project/1.jpg" alt="Mixed Use and Housing" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Mixed Use and Housing Project/2.jpg" alt="Mixed Use and Housing" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Mixed Use and Housing Project/3.jpg" alt="Mixed Use and Housing" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Architectural Projects/Mixed Use and Housing Project/4.jpg" alt="Mixed Use and Housing" style="width:100%">
+  <div class="text"></div>
 </div>
 	
-<div>
-	<p id="pagecontentgrey">This website is written in HTML and CSS by Kyle Farrugia. <br/>Kyle Farrugia is the sole owner of this website. <br/>The typeface 'Orbo' which is being used in this website was created and is owned by Kyle Farrugia.<br/>All the images on this website are owned by Kyle Farrugia.<br/><br/>Any unauthorised use of the property mentioned above is unlawful under Copyright laws. © Kyle Farrugia 2022.</p>
-	</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
 
 <script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 	document.getElementById("pagetitle").style.marginLeft = "280px";
-	document.getElementById("pagecontent2").style.marginLeft = "300px";
-	document.getElementById("pagecontentgrey").style.marginLeft = "300px";
+	document.getElementById("pagecontent7").style.marginLeft = "300px";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 	document.getElementById("pagetitle").style.marginLeft= "30px";
-	document.getElementById("pagecontent2").style.marginLeft= "50px";
-	document.getElementById("pagecontentgrey").style.marginLeft= "50px";
+	document.getElementById("pagecontent7").style.marginLeft= "50px";
 }
 	
 function myFunction() {

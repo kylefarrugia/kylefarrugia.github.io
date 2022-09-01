@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Heebo", sans-serif;
 	background-color:#202020;
 	color:#E3E3E3;
 }
@@ -107,6 +107,15 @@ body {
 	font-family: 'Orbo', Arial, sans-serif;
 	letter-spacing: 1px;
 	color:#B7B7B7;
+}
+
+#subtitle2 {
+	font-size: 25px;
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: 1px;
+	color:#B7B7B7;
+	padding: 0px 16px;
+	margin-left: 30px;
 }
 
 #pagetitle {
@@ -280,6 +289,7 @@ img {vertical-align: middle;}
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+	background-color: rgba(113,113,113,0.2);
 }
 
 /* Position the "next button" to the right */
@@ -462,6 +472,23 @@ img {vertical-align: middle;}
 		background-size: contain;
 	}
 
+	#MixUprev {
+		background: url("resources/Architectural Projects/Mixed Use and Housing Project/Photomontage Poster.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Trucprev {
+		background: url("resources/Architectural Projects/Trucker's Motel/p1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Trucprev:hover {
+		background: url("resources/Architectural Projects/Trucker's Motel/p2.jpg");
+		background-size: contain;
+	}
+
 	#Featprev {
 		background: url("resources/Photography/Featured/Preview/1.jpg");
 		background-size: contain;
@@ -528,11 +555,38 @@ img {vertical-align: middle;}
 		background-size: contain;
 	}
 
+	#Hompprev {
+		background: url("resources/Models/Hompesch/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
 
+	#Hompprev:hover {
+		background: url("resources/Models/Hompesch/2.jpg");
+		background-size: contain;
+	}
 
+	#Tileprev {
+		background: url("resources/Models/Tile/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
 
+	#Tileprev:hover {
+		background: url("resources/Models/Tile/2.jpg");
+		background-size: contain;
+	}
 
+	#Potprev {
+		background: url("resources/Models/Pot/1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
 
+	#Potprev:hover {
+		background: url("resources/Models/Pot/2.jpg");
+		background-size: contain;
+	}
 
 
 
