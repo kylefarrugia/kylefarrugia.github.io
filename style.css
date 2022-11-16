@@ -578,27 +578,16 @@ img {vertical-align: middle;}
 	}
 
 	#Tileprev {
-		background: url("resources/Models/Tile/1.jpg");
+		background: url("resources/Models/Tile/Prev.jpg");
 		background-size: contain;
 		transition: 0.3s;
-	}
-
-	#Tileprev:hover {
-		background: url("resources/Models/Tile/2.jpg");
-		background-size: contain;
 	}
 
 	#Potprev {
-		background: url("resources/Models/Pot/1.jpg");
+		background: url("resources/Models/Pot/Prev.jpg");
 		background-size: contain;
 		transition: 0.3s;
 	}
-
-	#Potprev:hover {
-		background: url("resources/Models/Pot/2.jpg");
-		background-size: contain;
-	}
-
 
 
 
