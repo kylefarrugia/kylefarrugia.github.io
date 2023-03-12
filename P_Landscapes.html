@@ -20,7 +20,18 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '794677011270616');
   fbq('track', 'PageView');
-</script>
+	// Slideshow Functions
+	document.addEventListener('keydown', function(event) {
+	if (event.code === 'ArrowRight') {
+	plusSlides(1);
+	}
+	});
+	document.addEventListener('keydown', function(event) {
+	if (event.code === 'ArrowLeft') {
+	plusSlides(-1);
+	}
+	});
+	</script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=794677011270616&ev=PageView&noscript=1"
 /></noscript>
