@@ -511,6 +511,18 @@ img {vertical-align: middle;}
 		background-size: contain;
 	}
 
+	#Ghadiraprev {
+		background: url("resources/Architectural Projects/Ghadira Bay Road Bridge/Prev1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#Ghadiraprev:hover {
+		background: url("resources/Architectural Projects/Ghadira Bay Road Bridge/Prev2.jpg");
+		background-size: contain;
+	}
+
+
 	#Featprev {
 		background: url("resources/Photography/Featured/Preview/1.jpg");
 		background-size: contain;
