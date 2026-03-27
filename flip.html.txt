@@ -1,0 +1,52 @@
+<head>
+  <!-- Include Turn.js and PDF.js libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  
+  <style>
+    #flipbook-container {
+      height: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Create a container for the flipbook -->
+  <div id="flipbook-container"></div>
+
+  <script>
+    // Initialize Turn.js with the flipbook container
+    var flipbook = $('#flipbook-container');
+    flipbook.turn({
+      width: 800,
+      height: 600,
+      autoCenter: true,
+      display: 'double', // Display two pages at a time
+      acceleration: true, // Use hardware acceleration if available
+      turnCorners: 'bl,br', // Allow turning corners from bottom left and bottom right
+      // Set the keys to turn pages
+      keyBindings: {
+        left: function() {
+          flipbook.turn('previous');
+        },
+        right: function() {
+          flipbook.turn('next');
+        }
+      }
+    });
+
+    // Load the PDF into the flipbook
+    PDFJS.getDocument('resources/Portfolio_issuu.pdf').then(function(pdf) {
+      // Loop through each page and add it to the flipbook
+      for (var i = 1; i <= pdf.numPages; i++) {
+        pdf.getPage(i).then(function(page) {
+          var canvas = document.createElement('canvas');
+          var context = canvas.getContext('2d');
+          canvas.height = 600;
+          canvas.width = 400;
+          page.render({canvasContext: context, viewport: page.getViewport(2)}); // Use 2 as the scale to display two pages
+          flipbook.turn('addPage', canvas);
+        });
+      }
+    });
+  </script>
+</body>

@@ -522,6 +522,17 @@ img {vertical-align: middle;}
 		background-size: contain;
 	}
 
+	#MScprev {
+		background: url("resources/Architectural Projects/MSc Thesis/Prev1.jpg");
+		background-size: contain;
+		transition: 0.3s;
+	}
+
+	#MScprev:hover {
+		background: url("resources/Architectural Projects/MSc Thesis/Prev2.jpg");
+		background-size: contain;
+	}
+
 
 	#Featprev {
 		background: url("resources/Photography/Featured/Preview/1.jpg");
@@ -765,6 +776,18 @@ img {vertical-align: middle;}
 	font-family: 'Orbo', Arial, sans-serif;
 	letter-spacing: 1px;
 	margin-top: 86px;
+	margin-bottom: 6px;
+	transition: margin-left .5s;
+	font-size: 35px;
+}
+
+#subtitle2 {
+	margin-left: 50px;
+	margin-right: 400px;
+	
+	font-family: 'Orbo', Arial, sans-serif;
+	letter-spacing: 1px;
+	margin-top: 20px;
 	margin-bottom: 6px;
 	transition: margin-left .5s;
 	font-size: 35px;
