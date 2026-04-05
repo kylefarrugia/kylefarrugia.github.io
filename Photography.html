@@ -8,6 +8,23 @@
 <link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
 	
+<meta name="description" content="Photography by Kyle Farrugia.">
+<meta name="keywords" content="Kyle Farrugia photography, photography, portfolio">
+<meta name="author" content="Kyle Farrugia">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Kyle Farrugia Projects">
+<meta property="og:description" content="Photography by Kyle Farrugia.">
+<meta property="og:url" content="https://kylefarrugia.github.io/Photography.html">
+<meta property="og:type" content="website">	
+	
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="resources/KF-Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="resources/Font/stylesheet.css" type="text/css" charset="utf-8" />
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -27,18 +44,17 @@
 <!-- End Facebook Pixel Code -->
 </head>
 
-<body class="animated an1 fadeIn" onUnload="myFunction()">
+<body class="animated an1 fadeIn"> <!--onUnload="myFunction()"-->
 
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="index.html">Home</a>
   <a href="About.html">About</a>
-  <a href="Architectural Projects.html">Design Projects</a>
-  <a href="Digital Work.html">Digital Work</a>
-  <a href="Models.html">Models</a>
+  <a href="Photography.html">Photography</a>
+  <a href="Projects.html">Engineering and Design</a>
+  <a href="Digital Work.html">Graphic Design</a>
   <a href="Contact.html">Contact</a>
-  <a href="PhotoshopCrashCourse.html">Photoshop Crash Course</a>
 </div>
 
 <div id="main">
@@ -48,13 +64,135 @@
 <div id="titleblock">
   <h1 id="pagetitle">Photography</h1>
 </div>
+	
+<h2 class="section-title">Featured</h2>
+	
+<div class="slideshow-container2">
+
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Birgu.jpg" alt="Fisherman, Birgu" style="width:100%">
+  <div class="text">Fisherman, Birgu</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Haunted HouseG.jpg" alt="Haunted House, Marsaxlokk" style="width:100%">
+  <div class="text">Haunted House, Marsaxlokk</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Notre Dame Gate_GS.jpg" alt="Notre Dame Gate, Birgu" style="width:100%">
+  <div class="text">Notre Dame Gate, Birgu</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Xrobb l-Ghagin.jpg" alt="Wind, Sea, and Globigerina, Xrobb l-Ghagin" style="width:100%">
+  <div class="text">Wind, Sea, and Globigerina, Xrobb l-Ghagin</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Xemxija.jpg" alt="Xemxija, St. Paul's Bay" style="width:100%">
+  <div class="text">Xemxija, St. Paul's Bay</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Lapsi Cove.jpg" alt="Ghar Lapsi, Siggiewi" style="width:100%">
+  <div class="text">Ghar Lapsi, Siggiewi</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Cover_s.jpg" alt="Ride-On Transport Fleet" style="width:100%">
+  <div class="text">Ride-On Transport Fleet</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/FilflaBW.jpg" alt="Filfla" style="width:100%">
+  <div class="text">Filfla</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/IMG_6942.jpg" alt="." style="width:100%">
+  <div class="text"></div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Kalkara Church Roof.jpg" alt="Kalkara Church Cupola, Kalkara" style="width:100%">
+  <div class="text">Kalkara Church Cupola, Kalkara</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/MtahlebC.jpg" alt="Migra l-Ferha, Rabat" style="width:100%">
+  <div class="text">Migra l-Ferha, Rabat</div>
+</div>
+	
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/MarsaxlokkC.jpg" alt="Marsaxlokk Harbour, Marsaxlokk" style="width:100%">
+  <div class="text">Marsaxlokk Harbour, Marsaxlokk</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="resources/Photography/Featured/Ramla Bay.jpg" alt="Ramla Bay, Nadur" style="width:100%">
+  <div class="text">Ramla Bay, Nadur</div>
+</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+</div>
+	
+<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+
+  if (dots.length > 0) {
+    dots[slideIndex - 1].className += " active";
+  }
+}	
+	
+	document.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowLeft") {
+    plusSlides(-1);
+  }
+
+  if (event.key === "ArrowRight") {
+    plusSlides(1);
+  }
+});
+	
+	</script>
+	
+<h2 class="section-title">Albums</h2>
 
 <div id="pagecontent7">
-		
-	<div class="imgpreviewholder"><a class="previewlink" href="P_Featured.html">		
-		<div class="imgpreview" id="Featprev"></div>
-		<p>Featured</p></a>		
-	</div>	
 	
 	<div class="imgpreviewholder"><a class="previewlink" href="P_Architecture.html">
 		<div class="imgpreview" id="Archprev"></div>
@@ -87,11 +225,44 @@
 
 	
 <script>
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slideshow = document.querySelector(".slideshow-container2");
+
+slideshow.addEventListener("touchstart", function(e) {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+slideshow.addEventListener("touchend", function(e) {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const swipeDistance = touchEndX - touchStartX;
+
+  if (swipeDistance > 50) {
+    plusSlides(-1);
+  }
+
+  if (swipeDistance < -50) {
+    plusSlides(1);
+  }
+}	
+	
+	
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 	document.getElementById("pagetitle").style.marginLeft = "280px";
 	document.getElementById("pagecontent7").style.marginLeft = "300px";
+	
+	const subtitles = document.getElementsByClassName("section-title");
+  for (let i = 0; i < subtitles.length; i++) {
+    subtitles[i].style.marginLeft = "300px";
+  }
 }
 
 function closeNav() {
@@ -99,6 +270,11 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 	document.getElementById("pagetitle").style.marginLeft= "30px";
 	document.getElementById("pagecontent7").style.marginLeft= "50px";
+	
+	const subtitles = document.getElementsByClassName("section-title");
+  for (let i = 0; i < subtitles.length; i++) {
+    subtitles[i].style.marginLeft = "50px";
+  }
 }
 	
 function myFunction() {
